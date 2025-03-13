@@ -1,16 +1,14 @@
 import ThemeToggle from "@/components/shared/theme-toggle";
-import { Button } from "@/components/ui/button";
+import { UserButton } from "@clerk/nextjs";
 
 export default function page() {
   return (
     <div className="p-5">
-      <div className="w-full flex justify-end">
+      <div className="w-full flex gap-x-4 justify-end">
+        <UserButton />
         <ThemeToggle />
       </div>
-      <h1 className="text-3xl text-blue-600 font-inter">
-        Hello to multivendor
-      </h1>
-      <Button>Click me</Button>
+      <h1 className="text-3xl text-blue-600 font-inter">Home Page</h1>
     </div>
   );
 }
